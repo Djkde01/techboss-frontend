@@ -1,6 +1,7 @@
 import {
   Button,
   Card,
+  CardActions,
   CardContent,
   CardMedia,
   makeStyles,
@@ -12,14 +13,15 @@ const useStyles = makeStyles(() => ({
   root: {
     maxWidth: 304,
     margin: "auto",
-    boxShadow: "none",
-    borderRadius: 0,
   },
   content: {
     padding: 24,
   },
   media: {
     height: 151,
+  },
+  actions: {
+    justifyContent: "center",
   },
 }));
 
@@ -37,9 +39,11 @@ const ProductCard = ({ id, productImage, productName, ...props }) => {
           {productName}
         </Typography>
       </CardContent>
-      <Button variant="contained" color="primary">
-        Ver
-      </Button>
+      <CardActions className={styles.actions}>
+        <Button variant="contained" color="primary">
+          Ver
+        </Button>
+      </CardActions>
     </Card>
   );
 };
