@@ -9,10 +9,11 @@ import {
 } from "@material-ui/core";
 import React from "react";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 304,
+    width: 304,
     margin: "auto",
+    height: "100%",
   },
   content: {
     padding: 24,
@@ -22,6 +23,7 @@ const useStyles = makeStyles(() => ({
   },
   actions: {
     justifyContent: "center",
+    margin: theme.spacing(2),
   },
 }));
 

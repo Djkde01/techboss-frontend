@@ -29,6 +29,7 @@ module.exports = {
       "@styles": path.resolve(__dirname, "src/styles"),
       "@routes": path.resolve(__dirname, "src/routes"),
       "@assets": path.resolve(__dirname, "src/assets"),
+      "@mockdata": path.resolve(__dirname, "src/data"),
     },
   },
   module: {
